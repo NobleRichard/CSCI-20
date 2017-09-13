@@ -12,11 +12,13 @@ struct Stock{  //This is where I create the objects
   char sector;
   double current_share_price;
   int number_of_shares_owned;
-  double total_stock_value;
+  double total_stock_value;  //made sure its a double in order to account for past doubles
 };
 
 int main(){
-    Stock stock1, stock2, stock3, stock4;
+    Stock stock1, stock2, stock3, stock4;   //four different stocks
+    
+    //asking for info for stock 1
     cout << "Please enter the name of the first company."<< endl;
     cin >> stock1.name;
     cout << "For the sector give the company its corresponding letter."<< endl;
@@ -27,8 +29,9 @@ int main(){
     cout << "Input the number of shares owned." << endl;
     cin >> stock1.number_of_shares_owned;
     
-    stock1.total_stock_value = stock1.current_share_price * stock1.number_of_shares_owned;
+    stock1.total_stock_value = stock1.current_share_price * stock1.number_of_shares_owned;  //end of stock 1
     
+     //asking for info for stock 2
     cout << "Please enter the name of the second company."<< endl;
     cin >> stock2.name;
     cout << "For the sector give the company its corresponding letter."<< endl;
@@ -39,8 +42,9 @@ int main(){
     cout << "Input the number of shares owned." << endl;
     cin >> stock2.number_of_shares_owned;
     
-    stock2.total_stock_value = stock2.current_share_price * stock2.number_of_shares_owned;
-    
+    stock2.total_stock_value = stock2.current_share_price * stock2.number_of_shares_owned; // end of stock 2
+  
+     //asking for info for stock 3  
     cout << "Please enter the name of the third company."<< endl;
     cin >> stock3.name;
     cout << "For the sector give the company its corresponding letter."<< endl;
@@ -51,8 +55,9 @@ int main(){
     cout << "Input the number of shares owned." << endl;
     cin >> stock3.number_of_shares_owned;
     
-    stock3.total_stock_value = stock3.current_share_price * stock3.number_of_shares_owned;
+    stock3.total_stock_value = stock3.current_share_price * stock3.number_of_shares_owned; // end of stock 3
     
+    //asking for info for stock 4
     cout << "Please enter the name of the fourth company."<< endl;
     cin >> stock4.name;
     cout << "For the sector give the company its corresponding letter."<< endl;
@@ -63,10 +68,11 @@ int main(){
     cout << "Input the number of shares owned." << endl;
     cin >> stock4.number_of_shares_owned;
     
-    stock4.total_stock_value = stock4.current_share_price * stock4.number_of_shares_owned;
+    stock4.total_stock_value = stock4.current_share_price * stock4.number_of_shares_owned;  // end of stock 4
     
-    double x = stock4.total_stock_value + stock1.total_stock_value + stock2.total_stock_value + stock3.total_stock_value;
+    double x = stock4.total_stock_value + stock1.total_stock_value + stock2.total_stock_value + stock3.total_stock_value; // calculate the portfolio total
     
+    //Where I will print out all of the information
     cout << "Stock Name      No of Shares     Current Value    Total Value" << endl;
     cout << "__________      ____________     _____________    ___________" << endl;
     cout << stock1.name << stock1.sector << "          " << stock1.number_of_shares_owned << "          " << stock1.current_share_price << "         " << stock1.total_stock_value << endl;
