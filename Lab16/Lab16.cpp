@@ -1,13 +1,18 @@
+/*
+*Richard Gutierrez
+*Lab16
+*9/12/17
+*/
 #include<iostream>
 #include<string>
 using namespace std;
 
-struct Stock{
+struct Stock{  //This is where I create the objects
   string name;
   char sector;
-  int current_share_price;
+  double current_share_price;
   int number_of_shares_owned;
-  int total_stock_value;
+  double total_stock_value;
 };
 
 int main(){
@@ -60,7 +65,7 @@ int main(){
     
     stock4.total_stock_value = stock4.current_share_price * stock4.number_of_shares_owned;
     
-    int x = stock4.total_stock_value + stock1.total_stock_value + stock2.total_stock_value + stock3.total_stock_value;
+    double x = stock4.total_stock_value + stock1.total_stock_value + stock2.total_stock_value + stock3.total_stock_value;
     
     cout << "Stock Name      No of Shares     Current Value    Total Value" << endl;
     cout << "__________      ____________     _____________    ___________" << endl;
