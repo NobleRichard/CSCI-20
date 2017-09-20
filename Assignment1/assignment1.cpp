@@ -53,9 +53,16 @@ vroom4.seconds = vroom4.velocity / vroom4.acceleration;
 
 
 //Now to output it all
-cout << "The first jets acceleration is: " << vroom1.acceleration << "and the time taken for the jet to reach takeoff speed is: " << vroom1.seconds << endl;
-cout << "The second jets acceleration is: " << vroom2.acceleration << "and the time taken for the jet to reach takeoff speed is: " << vroom2.seconds << endl;
-cout << "The third jets acceleration is: " << vroom3.acceleration << "and the time taken for the jet to reach takeoff speed is: " << vroom3.seconds << endl;
-cout << "The fourth jets acceleration is: " << vroom4.acceleration << "and the time taken for the jet to reach takeoff speed is: " << vroom4.seconds << endl;
+cout << "The first jets acceleration is: " << vroom1.acceleration << " and the time taken for the jet to reach takeoff speed is: " << vroom1.seconds << "sec" << endl;
+cout << "The second jets acceleration is: " << vroom2.acceleration << " and the time taken for the jet to reach takeoff speed is: " << vroom2.seconds << "sec" << endl;
+cout << "The third jets acceleration is: " << vroom3.acceleration << " and the time taken for the jet to reach takeoff speed is: " << vroom3.seconds << "sec" << endl;
+cout << "The fourth jets acceleration is: " << vroom4.acceleration << " and the time taken for the jet to reach takeoff speed is: " << vroom4.seconds << "sec" << endl;
 return 0;
 }
+
+/*
+The first jets acceleration is: 32.2228and the time taken for the jet to reach takeoff speed is: 2.38961
+The second jets acceleration is: 4.235and the time taken for the jet to reach takeoff speed is: 18.1818
+The third jets acceleration is: 25.2083and the time taken for the jet to reach takeoff speed is: 2.18182
+The fourth jets acceleration is: 0.520714and the time taken for the jet to reach takeoff speed is: 51.8519
+*/
