@@ -28,6 +28,15 @@ int main (){
     cout << "Wind Speed         Old Formula     New Formula    WindChill Difference " << endl;
     cout << wind1.velocity << "                   " << wind1.OldWindChill << "        " << wind1.NewWindChill << "           " << wind1.WindDifference << endl;
     
+    /*
+      Wind Speed         Old Formula     New Formula    WindChill Difference 
+          4                29.8244         25.767           4.05737
+         10                27.0757         32.713           5.6373        
+          2                98.8446        105.711           6.8664
+      
+      
+    */
+    
     
     
     return 0;
