@@ -6,7 +6,7 @@ using namespace std;
 
 
 int Rand(int little, int big){  //gives random number 
-    int s = 0;
+    int s = 0; // the scope for this varible will only be this function. It will never know life outisde of thsi function. Its all it knows
     if(little > big){  //in order to swtich things up we need to see if we even need to
         s = little;
         little = big;
@@ -28,11 +28,11 @@ int Rand(int little, int big){  //gives random number
 }
 }
 
-double PoundsToKilo(double poundtokilo){ //bring in user inputed pound and switch to kilo
+double PoundsToKilo(double poundtokilo){ //bring in user inputed pound and switch to kilo  poundtokilo will stay in this function forever. It doesn't know if  its in hell or heaven. For it is a number that has no sense of life
     return poundtokilo * 0.453592;  //returns the pound to kilo
 }
 
-double KilogramPound(double kilotopound){ //bring in user inputed kilo and swtich to pound
+double KilogramPound(double kilotopound){ //bring in user inputed kilo and swtich to pound kilotopound stays in the scope of the function KilogramToPound
     return kilotopound * 2.20462;  //returns the kilo to pound
 }
 
