@@ -12,10 +12,10 @@ int Rand(int little, int big){  //gives random number
         little = big;
         big = s;
        
-    srand(time(0));
-    int x = 0;
-    x = rand () % (big-little) + little + 1; //this way it makes the random number between the two inputed numbers
-    cout << "Your random number between " << little << " and " << big << " is: " << x << endl;
+       srand(time(0));
+       int x = 0;
+       x = rand () % (big-little) + little + 1; //this way it makes the random number between the two inputed numbers
+       cout << "Your random number between " << little << " and " << big << " is: " << x << endl;
        
         return x;
     }
@@ -28,29 +28,30 @@ int Rand(int little, int big){  //gives random number
 }
 }
 
-double PoundsToKilo(double poundtokilo){
-    return poundtokilo * 0.453592;
+double PoundsToKilo(double poundtokilo){ //bring in user inputed pound and switch to kilo
+    return poundtokilo * 0.453592;  //returns the pound to kilo
 }
 
-double KilogramPound(double kilotopound){
-    return kilotopound * 2.20462;
+double KilogramPound(double kilotopound){ //bring in user inputed kilo and swtich to pound
+    return kilotopound * 2.20462;  //returns the kilo to pound
 }
 
 int main(){
-    int holder = 0;
+    double holder = 0;
     holder = Rand(78, 22);
-    
+ 
     double kilo = 0;
-    cout << "Input your weight in pounds." << endl;
-    cin >> kilo;
-    kilo = PoundsToKilo(kilo);
-    cout << kilo << endl;
+    kilo = holder;
+    kilo = PoundsToKilo(kilo);   //calls function and then function returns the pounds but in kilos
+    cout << kilo << endl;  //output the now kilo
+    superholder = kilo;
     
     double pound = 0;
-    cout << "Input a certain amount of kilos." << endl;
-    cin >> pound;
-    pound = KilogramPound(pound);
-    cout << pound << endl;
+    pound = kilo;
+    pound = KilogramPound(pound); //calls function and then function returns the kilo but in pounds
+    cout << pound << endl;  //output the now pound
+    
+    cout << "I bet " << holder << "lbs is equal to " << pound << "lbs." << endl;
     
     return 0;
 }
