@@ -20,12 +20,8 @@ class Runner{   //the class to hold information
     
 };
 
-
-
-
 int main(){
     Runner bolt; //make runner 
-    
     
     bolt.SetTime(60, 22);  
     bolt.GetTime();

@@ -60,9 +60,17 @@ void book::SetCRY(int z){
     copyrightyear_ = z;
 }
 int book::GetCRY(){
-    return copyrightyear_;
+    return copyrightyear_; 
 }
 void book::Print(){
-    cout << GetTitle() << " " << GetAuthor() << " " << GetCRY() << endl;
+    cout << GetTitle() << " " << GetAuthor() << " " << GetCRY() << endl; //call functions within the class because we are already in the class
 }
+/*
+Romans Paul 100
+Philippians Paul 104
+Corinthians1 Paul 105
+Corinthians2 Paul 110
+Galatians Paul 115
+*/
+
 
