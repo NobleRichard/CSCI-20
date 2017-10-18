@@ -19,7 +19,7 @@ int main(){
     cin >> t;
     
 
-    if(((sp <= 10 || dp <=10) && (dp + sp) <= 10) && gb != 0 && t != 0){
+    if(((sp <= 10 || dp <=10) && (dp + sp) <= 10) && gb >= 0 && t >= 0){
         cout << "ATT Unliumted Choice Plan" << endl;
         line = dp + sp;  
            if (line == 1 && t != 0 ){
@@ -33,7 +33,7 @@ int main(){
            }
         cout << "With this plan you would pay:$" << cost << endl;        
     }
-    if((sp <= 10 || dp <=10) && gb != 0 && t != 0){
+    if((sp <= 10 || dp <=10) && gb >= 0 && t >= 0){
         cout << "ATT Family Plan" << endl;
          line = dp + sp;  
            if (gb == 1){
@@ -56,7 +56,7 @@ int main(){
            }
         cout << "With this plan you would pay:$" << cost << endl;        
     }  
-    if((sp <= 10 || dp <=10)  && gb != 0 && t != 0){
+    if((sp <= 10 || dp <=10)  && gb >= 0 && t >= 0){
         cout << "Verizon Unlimted Plan" << endl;
         line = dp + sp;  
            if (line == 1 && t != 0 ){
@@ -70,7 +70,7 @@ int main(){
            }
         cout << "With this plan you would pay:$" << cost << endl;        
     }
-    if((sp <= 10 || dp <=10)  && gb != 0 && t == 0){
+    if((sp <= 10 || dp <=10)  && gb >= 0 && t == 0){
         cout << "Sprint Unlimted Plan" << endl;
           line = dp + sp;  
            if (line == 1){
