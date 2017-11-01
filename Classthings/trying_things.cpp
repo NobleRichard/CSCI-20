@@ -3,13 +3,14 @@
 using namespace std;
 
 int main(){
-int x = 0;
-int y = 0;
-    cin >> x >> y;
-    
-    cout << x << endl;
-    cout << y << endl;
-    
-    return 0;
+        srand(time(0));
+    int YesorNo = rand () % 2;
+    if(YesorNo == 1){
+        cout << "1";
+    }
+
+    else{
+    cout << "0";
+    }
 }
 
