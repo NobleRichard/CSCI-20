@@ -32,7 +32,13 @@ int main(){
     char grades2[7];
     char grades3[7];
     
+    double GPA[4];
+    double GPA1 = 0;
+    double GPA2 = 0;
+    double GPA3 = 0;
+    
     ifstream fir; //input file stream
+    ofstream fin; //ouptut file stream
     fir.open("intput.txt"); //opens file
     
     fir >> name1[0];  //input all the info for first person
@@ -75,15 +81,85 @@ int main(){
     
     fir.close(); //closes file
     
-    
-    for (int i = 0; i < 6; i++){
-        
-        
-        
+    for (int i = 0; i < 5; i++){
+        if(grades1[i] == 'A'){
+            GPA[i] = 4;
+        }
+        else if(grades1[i] == 'B'){
+            GPA[i] = 3;
+        }
+        else if(grades1[i] == 'C'){
+            GPA[i] = 2;
+        }
+        else if(grades1[i] == 'D'){
+            GPA[i] = 1;
+        }
+        else{
+            GPA[i] = 0;
+        }
     }
+    for(int i = 0; i < 5; i++){
+        GPA1 += GPA[i];
+    }
+    GPA1 = GPA1 / classAmount[0];
+    
+    for (int i = 0; i < 5; i++){
+        if(grades2[i] == 'A'){
+            GPA[i] = 4;
+        }
+        else if(grades2[i] == 'B'){
+            GPA[i] = 3;
+        }
+        else if(grades2[i] == 'C'){
+            GPA[i] = 2;
+        }
+        else if(grades2[i] == 'D'){
+            GPA[i] = 1;
+        }
+        else{
+            GPA[i] = 0;
+        }
+    }
+    for(int i = 0; i < 5; i++){
+        GPA2 += GPA[i];
+    }
+    GPA2 = GPA2 / classAmount[1];
+    
+    for (int i = 0; i < 5; i++){
+        if(grades3[i] == 'A'){
+            GPA[i] = 4;
+        }
+        else if(grades3[i] == 'B'){
+            GPA[i] = 3;
+        }
+        else if(grades3[i] == 'C'){
+            GPA[i] = 2;
+        }
+        else if(grades3[i] == 'D'){
+            GPA[i] = 1;
+        }
+        else{
+            GPA[i] = 0;
+        }
+    }
+    for(int i = 0; i < 5; i++){
+        GPA3 += GPA[i];
+    }
+    GPA3 = GPA3/ classAmount[2];
+    
+    fin.open("Lab46.html");
+
+    fin << "Student's name: " << name1[0] << " " << name1[1] << endl;
+    fin << "GPA: " << GPA1 << endl;
+    
+    fin << "Student's name: " << name2[0] << " " << name2[1] << endl;
+    fin << "GPA: " << GPA2 << endl;
+    
+    fin << "Student's name: " << name3[0] << " " << name3[1] << endl;
+    fin << "GPA: " << GPA3 << endl;
     
     
-    
+    fin.close();
     
     return 0;
 }
