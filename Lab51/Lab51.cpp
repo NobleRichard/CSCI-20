@@ -5,12 +5,12 @@ using namespace std;
 
 int main() {
     int nameLength = 0;
-    char * name = new char[10]; //creating a new pointer array that can be accessed
+    char * name = new char[10]; //creating a new pointer array that can be accessed, also needs a value of 10
 
     cout << "Please enter a 10 letter word or less" << endl; 
     cin >> name; 
     cout << name;
-/*
+
     char * head  = name; //the pointer head now holds the value given to the variable name
     char * tail = name;  //the pointer tail also holds the value that was given to name
     nameLength = strlen(*name);  //gives you the length of the "string" name, 
@@ -50,7 +50,7 @@ int main() {
      head++;
      tail--;
 
-     if (*head == *tail) //checks the 
+     if (*head == *tail) 
      {
          cout << "It is an palindrome!" << endl;
      }
@@ -58,6 +58,6 @@ int main() {
      {
          cout << "It is not an palindrome" << endl;
      }
-*/
+
      return 0; 
 }
